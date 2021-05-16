@@ -1,6 +1,6 @@
 FROM node:lts-slim
 
-RUN apk --no-cache add nodejs yarn
+RUN apt-get update -y && apt-get add nodejs yarn -y
 
 ADD entrypoint.sh /entrypoint.sh
 
