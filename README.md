@@ -4,5 +4,4 @@
 
 ## Dependencies
 
-- Git
 - Node.js LTS
