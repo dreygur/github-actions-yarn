@@ -1,0 +1,5 @@
+name: 'Github Actions Yarn'
+description: 'arn and Node.js For Github Actions'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
