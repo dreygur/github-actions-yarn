@@ -1,6 +1,6 @@
-FROM node:14
+FROM node:lts-slim
 
-RUN npm install -g -s --no-progress yarn
+RUN apk --no-cache add nodejs yarn
 
 ADD entrypoint.sh /entrypoint.sh
 
