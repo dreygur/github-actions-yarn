@@ -9,10 +9,7 @@ LABEL "repository"="https://github.com/dreygur/github-actions-yarn"
 LABEL "homepage"="https://github.com/dreygur/github-actions-yarn"
 LABEL "maintainer"="Rakibul Yeasin <ryeasin03@gmail.com>"
 
-RUN \
-    apt-get update -y && \
-    apt-get install -y git && \
-    npm install -g -s --no-progress yarn
+RUN npm install -g -s --no-progress yarn
 
 ADD entrypoint.sh /entrypoint.sh
 
